@@ -1,2 +1,7 @@
 __pycache__/
 __pycache__
+ChatGPT.env
+Gemini_key.env
+
+.venv/
+.ipynb_checkpoints/
