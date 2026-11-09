@@ -1,0 +1,30 @@
+# Third-party packages imported by the notebooks/scripts in this repo.
+# Install with:  .venv/bin/pip install -r requirements.txt
+
+# Jupyter kernel
+ipykernel
+
+# Reachy SDKs (usually already installed system-wide on the robot;
+# create the venv with --system-site-packages to reuse them)
+reachy-sdk
+mobile-base-sdk @ git+https://github.com/pollen-robotics/mobile-base-sdk.git
+
+# Vision
+numpy
+opencv-python
+ultralytics
+matplotlib
+scipy
+pollen-vision @ git+https://github.com/pollen-robotics/pollen-vision.git
+
+# Audio / speech
+pygame
+sounddevice
+pydub
+gTTS
+openai-whisper
+google-genai
+httpx
+
+# Coral Edge TPU (pycoral) is NOT on PyPI for most setups; install separately:
+#   pip install --extra-index-url https://google-coral.github.io/py-repo/ pycoral
