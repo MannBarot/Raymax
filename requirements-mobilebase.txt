@@ -1,0 +1,14 @@
+# Minimal env for mobile_base.ipynb / mbkeyboard.py (Reachy + mobile base control).
+# Kept separate so newer vision/AI packages can't upgrade protobuf past 3.x,
+# which breaks the Reachy SDK's generated gRPC code.
+#
+# Create on the robot (reuses the system-installed reachy_sdk, mobile_base_sdk,
+# reachy_sdk_api, grpcio, protobuf, numpy, cv2 from ~/dev):
+#   python3 -m venv --system-site-packages .venv-mobilebase
+#   .venv-mobilebase/bin/pip install -r requirements-mobilebase.txt
+#
+# pip skips anything the system already provides. Do NOT add packages here that
+# require protobuf>=4.
+
+ipykernel
+pygame
