@@ -6,3 +6,5 @@ Gemini_key.env
 .venv/
 .ipynb_checkpoints/
 .venv-mobilebase/
+*.npz
+*.png
